@@ -7,6 +7,10 @@
     --full-white: #efefef;
 }
 
+.logo-brand {
+    max-width: 200px;
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
