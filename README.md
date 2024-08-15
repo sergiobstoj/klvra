@@ -1,6 +1,7 @@
 # KLVRA website
 
-Descripción breve de tu página web. Explica en una o dos frases qué hace y cuál es su propósito principal.
+Página web para Equipo de Producción Técnica KLVRA.
+www.klvra.cl
 
 ## Licencia
 
