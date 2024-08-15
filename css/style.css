@@ -3,7 +3,8 @@
     --primary: #D81324;
     --secondary: #0B2154;
     --light: #F2F2F2;
-    --dark: #111111;
+    --dark: #000000;
+    --full-white: #efefef;
 }
 
 .fw-medium {
@@ -33,6 +34,11 @@
     opacity: 1;
 }
 
+/*** First Header ***/
+.address {
+    color: #fff !important;
+}
+
 
 /*** Button ***/
 .btn {
@@ -41,9 +47,20 @@
     transition: .5s;
 }
 
-.btn.btn-primary,
+.btn.btn-primary {
+    color: #fff;
+}
+
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #000;
+}
+
+.btn.btn-primary:hover {
+    color: #000;
+}
+
+.btn.btn-secondary:hover {
+    color: #fff;
 }
 
 .btn-square {
@@ -114,7 +131,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
 }
 
@@ -195,7 +212,7 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-0.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,16 +221,35 @@
 
 /*** Service ***/
 .service .nav .nav-link {
-    background: var(--light);
+    /* background: var(--full-white); */
     transition: .5s;
+    color: #fff;
 }
 
 .service .nav .nav-link.active {
-    background: var(--primary);
+    background: var(--light);
+    color: #000;
 }
 
 .service .nav .nav-link.active h4 {
-    color: #FFFFFF !important;
+    color: #000 !important;
+}
+
+.service .nav .nav-link.active:hover {
+    color: #fff !important;
+}
+
+.service .nav .nav-link.active:hover h4 {
+    color: #fff !important;
+}
+
+.service .nav .nav-link:hover {
+    background: var(--dark);
+    transition: .5s;
+}
+
+.service .nav .nav-link:hover h4 {
+    color: #fff;
 }
 
 
@@ -274,6 +310,10 @@
     background: var(--secondary)
 }
 
+.team-item h5, small{
+    color: #000 !important;
+    /* background: var(--secondary) */
+}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-text,
@@ -282,11 +322,11 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
+    background: #FFF !important;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
+    color: #000 !important;
 }
 
 .testimonial-carousel .owl-dots {
@@ -307,8 +347,8 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: var(--light);
+    border-color: var(--light);
 }
 
 
